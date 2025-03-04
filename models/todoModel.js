@@ -10,12 +10,12 @@ const todoSchema=new mongoose.Schema({
         type:String,
         required:[true,"Provide a title."],
     },
-    iscompleted:{
+    isCompleted:{
         type:Boolean,
         default:false,
     },
 });
 
-const Todo=mongoose.model("Todo",userSchema);
+const Todo=mongoose.model("Todo",todoSchema);
 
 export default Todo;
